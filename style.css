@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+.topnav a {
+    float: right;
+    color: #000000;
+    text-align: center;
+    padding: 25px 25px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #F3F1FF;
+}
+.logo-part{
+    width: 80%;
+    margin: auto;
+}
+.logo{
+    color: #000000;
+}
+header{
+    width: 85%;
+    margin: auto;
+    display: flex;
+}
+.first{
+    width: 60%;
+    padding: 20px;
+}
+.camera{
+    width: 40%;
+}
+.title{
+    font-weight: 700;
+    font-size: 50px;
+}
+
+.fourty>img:hover{
+    transform: rotatey(180deg);
+}
+.fourty>img{
+    transition: width 10s linear, height 8s linear 2s, transform 3s;
+}
+.button{
+    width: 196px;
+    height: 44px;
+    background-color: #E02C6D;
+    border-radius: 41px;
+    border: none;
+}
+.link-button{
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+}
+main{
+    width: 85%;
+    margin: auto;
+}
+
+.products{
+    margin-bottom: 50px;
+}
+.mytitle{
+    text-align: center;
+}
+.items{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 24px;
+    grid-row-gap: 24px;
+    margin-bottom: 24px;
+}
+.item{
+    width: 300px;
+    height: 484px;
+    border: 1px solid rgba(245, 245, 245, 0.952);
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+.item>img{
+    border-radius: 5px;
+}
+.fa-star{
+    color: #FFC014;
+}
+.feature{
+    display: flex;
+    margin-top: 50px;
+    padding-right: 50px;
+}
+
+
+
+
+.footer{
+    text-align: center;
+
+    background-color: rgba(62, 89, 241, 0.986);
+}
+
+@media only screen and (max-width: 688px) {
+    header{
+        width: 320px;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .fourty>img{
+        width: 100px;
+    }
+    .products{
+        display: flex;
+        flex-direction: column;
+    }
+    .featureimage>img{
+        display: block;
+    }
+    .items{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .item{
+        
+        margin-bottom: 50px;
+    }
+    .item>img{
+        width: 100%;
+    }
+    .feature{
+        
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .featureimage>img{
+        width: 270px;
+    }
+   
+    .footer{
+        width: 100%;
+    }
+    
+   
+}
+@media screen and (max-width: 1025px) {
+    header{
+        width: 640px;
+        margin: 0;
+        display: flex;
+    }
+    .fourty>img{
+        width: 400px;
+    }
+    .products{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .items{
+        grid-template-columns: repeat(2, 1fr);
+        width: 640px;
+    }
+    
+    footer{
+        width: 100%;
+    }
+}
